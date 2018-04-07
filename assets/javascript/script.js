@@ -45,6 +45,7 @@ $( document ).ready(function(){
 
         //Reset Random Number
         randomNumber = Math.floor(Math.random() * 69 + 30);
+        $('#replace-random-number').text(randomNumber);
 
         //Reset Score
         yourScore = 0;
@@ -68,67 +69,71 @@ $( document ).ready(function(){
     }
 
     // Crystal Values
+    $(document).ready(function(){
+        //Set Click for Jewel
+        $('#crystal-one').click(function(){
 
-    //Set Click for Jewel
-    $('#crystal-one').click(function(){
+            scoreTotal = yourScore + crystalOne;
+            yourScore = scoreTotal;
+            $('#replace-your-score').html(scoreTotal);
 
-        userTotal = yourScore + crystalOne;
-        $('#replace-your-score').text(userTotal); 
+            //Set Win/Lose Conditions
+            if (scoreTotal == randomNumber){
+                youWin();
+            }
+            else if (scoreTotal > randomNumber){
+                youLose();
+            }  
+        })
 
-        //Set Win/Lose Conditions
-        if (userTotal == randomNumber){
-            youWin();
-        }
-        else if ( userTotal > randomNumber){
-            youLose();
-        }  
-    })
+        //Set Click for Jewel
+        $('#crystal-two').click(function(){
 
-    //Set Click for Jewel
-    $('#crystal-two').click(function(){
+            scoreTotal = yourScore + crystalTwo;
+            yourScore = scoreTotal;
+            $('#replace-your-score').html(scoreTotal); 
 
-        userTotal = yourScore + crystalTwo;
-        $('#replace-your-score').text(userTotal); 
+            //Set Win/Lose Conditions
+            if (scoreTotal == randomNumber){
+                youWin();
+            }
+            else if (scoreTotal > randomNumber){
+                youLose();
+            }  
+        })
 
-        //Set Win/Lose Conditions
-        if (userTotal == randomNumber){
-            youWin();
-        }
-        else if ( userTotal > randomNumber){
-            youLose();
-        }  
+        //Set Click for Jewel
+        $('#crystal-three').click(function(){
+
+            scoreTotal = yourScore + crystalThree;
+            yourScore = scoreTotal;
+            $('#replace-your-score').html(scoreTotal); 
+
+            //Set Win/Lose Conditions
+            if (scoreTotal == randomNumber){
+                youWin();
+            }
+            else if (scoreTotal > randomNumber){
+                youLose();
+            }  
+        })
+
+        //Set Click for Jewel
+        $('#crystal-four').click(function(){
+
+            scoreTotal = yourScore + crystalFour;
+            yourScore = scoreTotal;
+            $('#replace-your-score').html(scoreTotal); 
+
+            //Set Win/Lose Conditions
+            if (scoreTotal == randomNumber){
+                youWin();
+            }
+            else if (scoreTotal > randomNumber){
+                youLose();
+            }  
+        })
     });
-
-    //Set Click for Jewel
-    $('#crystal-three').click(function(){
-
-        userTotal = yourScore + crystalThree;
-        $('#replace-your-score').text(userTotal); 
-
-        //Set Win/Lose Conditions
-        if (userTotal == randomNumber){
-            youWin();
-        }
-        else if ( userTotal > randomNumber){
-            youLose();
-        }  
-    });
-
-    //Set Click for Jewel
-    $('#crystal-four').click(function(){
-
-        userTotal = yourScore + crystalFour;
-        $('#replace-your-score').text(userTotal); 
-
-        //Set Win/Lose Conditions
-        if (userTotal == randomNumber){
-            youWin();
-        }
-        else if ( userTotal > randomNumber){
-            youLose();
-        }  
-    });
-    
 
 
     //Game begins when Start Button is Clicked
