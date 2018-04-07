@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Crystals Collector</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Site Title - top section of page -->
+    <div class="container boxes" id="site-title">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container inside-boxes" id="site-title">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="text-center" id="title">Crystal Game</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Instructions Section -->
+    <div class="container boxes" id="instructions">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container inside-boxes">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Instructions Heading -->
+
+                            <div class="container" id="instructions-title">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2 class="text-center">Instructions</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Instructions Paragraph -->
+                            <div class="container" id="detailed-instructions">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>You will be given a random number at the start of the game</p>
+                                        <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score</p>
+                                        <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number</p>
+                                        <p>The value of each crystal is hidden from you until you click on it.</p>
+                                        <p>Each time when the game starts, the game will change the values of each crystal</p>
+                                    </div>
+                                </div>
+
+                                <div class="row text-center">
+                                    <div class="col-lg-12">
+                                        <button type="button" class="btn btn-dark" id="start-button">Click to Begin</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score Section -->
+    <div class="container" id="score-section">
+        <div class="row">
+
+            <!-- Random Number and Player's Score -->
+            <div class="col-lg-6 score">
+
+                <div class="container score-boxes">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="container score-inside-boxes">
+                                <div class="row">
+                                    <div class="col">
+
+                                        <!-- Content -->
+                                        <div class="container" id="random-number">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h3>Random Number</h3>
+                                                    <h1 id="replace-random-number">#</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="container" id="your-score">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h3>Your Score</h3>
+                                                    <h1 id="replace-your-score">#</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <!-- Wins and Losses -->
+            <div class="col-lg-6 win-lose">
+
+                <div class="container score-boxes">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="container score-inside-boxes">
+                                <div class="row">
+                                    <div class="col">
+
+                                        <!-- Content -->
+                                        <div class="container" id="wins">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h3>Wins</h3>
+                                                    <h1 id="replace-wins">#</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="container" id="losses">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h3>Losses</h3>
+                                                    <h1 id="replace-losses">#</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>        
+                    
+            
+        </div>
+    </div>
+
+
+    <!-- Crystal Section -->
+    <div class="container boxes" id="crystal-box">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="container inside-boxes" id="crystal-box">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="text-center">Crystals</h2>
+
+                                <div class="container crystals">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <img class="img-fluid" id="crystal-one" src="assets/images/Crystals-01.png" alt="Crystal Number 1">
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <img class="img-fluid" id="crystal-two" src="assets/images/Crystals-02.png" alt="Crystal Number 2">
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <img class="img-fluid" id="crystal-three" src="assets/images/Crystals-03.png" alt="Crystal Number 3">    
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <img class="img-fluid"  id="crystal-four" src="assets/images/Crystals-04.png" alt="Crystal Number 4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="assets/javascript/script.js"></script>
+
+
+</html>
+
